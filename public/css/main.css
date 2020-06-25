@@ -1,0 +1,8 @@
+.nav-sidebar .nav-item>.nav-link {
+    position: relative;
+}
+
+li.nav-item a p {
+    position: absolute;
+    left: 55px;
+}

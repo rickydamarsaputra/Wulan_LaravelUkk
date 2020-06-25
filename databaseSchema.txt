@@ -1,0 +1,40 @@
+=>Users =
+	-id
+	-name
+	-username
+	-password
+	-is_admin
+	-is_active
+
+=>Students =
+	-id
+	-nisn
+	-nis
+	-class_id(classrooms->id)
+	-address
+	-phone
+
+=>Type_of_payment =
+	-id
+	-payment_name
+	-price
+
+=>Payments =
+	-id
+	-user_id(users->id)
+	-student_id(student->id)
+	-type_of_payment_id(type_of_payment->id)
+	-payment_date
+	-total_payment
+	-note
+
+=>Classrooms =
+	-id
+	-class_name
+	-expertise_competencies
+
+=>Reports =
+	-id
+	-from
+	-content
+	
